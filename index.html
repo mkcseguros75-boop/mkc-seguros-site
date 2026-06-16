@@ -1,1 +1,961 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MKC Seguros & Previdência</title>
+
+<meta name="description" content="MKC Seguros & Previdência. Soluções em Seguro Auto, Residencial, Vida, Saúde, Empresarial e Previdência Privada para pessoas, famílias e empresas em todo o Brasil.">
+
+<meta name="keywords" content="seguros, previdência privada, seguro auto, seguro residencial, seguro de vida, plano de saúde, seguro empresarial">
+
+<meta name="author" content="MKC Seguros & Previdência">
+
+<meta property="og:title" content="MKC Seguros & Previdência">
+<meta property="og:description" content="Proteção para pessoas, famílias e empresas em todo o Brasil.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.mkcseguros.com.br">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"InsuranceAgency",
+"name":"MKC Seguros & Previdência",
+"url":"https://www.mkcseguros.com.br",
+"telephone":"+55 21 98829-3583",
+"email":"contato@mkcseguros.com.br",
+"areaServed":"Brasil",
+"description":"Corretora especializada em seguros e previdência privada."
+}
+</script>
+
+<style>
+
+:root{
+--azul:#1389C9;
+--azul-medio:#2FA4E7;
+--azul-claro:#72CCFF;
+--dourado:#D4A62A;
+--cinza:#6B7280;
+--fundo:#F8FAFC;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:var(--fundo);
+color:#1F2937;
+overflow-x:hidden;
+line-height:1.7;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+header{
+position:sticky;
+top:0;
+z-index:999;
+background:white;
+padding:14px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 18px rgba(0,0,0,.08);
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+height:95px;
+width:auto;
+}
+
+.logo-text{
+font-size:28px;
+font-weight:700;
+color:var(--azul);
+}
+
+nav{
+display:flex;
+align-items:center;
+gap:28px;
+}
+
+nav a{
+text-decoration:none;
+color:var(--azul);
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:var(--dourado);
+}
+
+.btn-whats{
+background:#25D366;
+color:white;
+padding:12px 22px;
+border-radius:10px;
+text-decoration:none;
+font-weight:600;
+}
+
+.hero{
+background:linear-gradient(
+135deg,
+#1389C9 0%,
+#2FA4E7 55%,
+#72CCFF 100%
+);
+padding:90px 8%;
+color:white;
+}
+
+.hero-container{
+max-width:1300px;
+margin:auto;
+display:grid;
+grid-template-columns:1.1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.hero h1{
+font-size:64px;
+font-weight:800;
+line-height:1.15;
+margin-bottom:25px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:35px;
+}
+
+.hero-buttons{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.btn-primary{
+background:var(--dourado);
+color:white;
+padding:16px 32px;
+border-radius:12px;
+text-decoration:none;
+font-weight:600;
+}
+
+.btn-secondary{
+border:2px solid white;
+color:white;
+padding:16px 32px;
+border-radius:12px;
+text-decoration:none;
+font-weight:600;
+}
+
+.hero-image img{
+max-width:520px;
+border-radius:28px;
+box-shadow:0 20px 50px rgba(0,0,0,.20);
+}
+
+.section{
+padding:90px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:48px;
+font-weight:800;
+color:#1389C9;
+margin-bottom:15px;
+}
+
+.section-subtitle{
+text-align:center;
+color:#6B7280;
+max-width:800px;
+margin:auto;
+margin-bottom:60px;
+}.trust-bar{
+background:#EAF6FF;
+padding:35px 8%;
+}
+
+.trust-grid{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+text-align:center;
+}
+
+.trust-item{
+font-weight:600;
+font-size:18px;
+color:#1389C9;
+}
+
+.partners{
+background:#1389C9;
+}
+
+.partners .section-title{
+color:white;
+}
+
+.partners .section-subtitle{
+color:#EAF6FF;
+}
+
+.partners-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+max-width:1000px;
+margin:auto;
+}
+
+.partner-card{
+background:white;
+padding:20px;
+border-radius:20px;
+display:flex;
+align-items:center;
+justify-content:center;
+min-height:120px;
+transition:.3s;
+}
+
+.partner-card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 30px rgba(0,0,0,.18);
+}
+
+.partner-card img{
+max-width:120px;
+max-height:55px;
+width:auto;
+height:auto;
+object-fit:contain;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+max-width:1300px;
+margin:auto;
+}
+
+.card{
+background:white;
+padding:35px;
+border-radius:22px;
+box-shadow:0 10px 25px rgba(0,0,0,.06);
+transition:.35s;
+cursor:pointer;
+}
+
+.card:hover{
+transform:translateY(-12px);
+box-shadow:0 25px 45px rgba(19,137,201,.25);
+border:1px solid var(--dourado);
+}
+
+.card-icon{
+width:80px;
+height:80px;
+background:#EAF6FF;
+border-radius:20px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:38px;
+margin-bottom:20px;
+}
+
+.card h3{
+font-size:24px;
+color:#1389C9;
+margin-bottom:15px;
+}
+
+.card-btn{
+display:inline-block;
+background:var(--dourado);
+color:white;
+padding:12px 22px;
+border-radius:10px;
+text-decoration:none;
+font-weight:600;
+margin-top:10px;
+}
+
+@media(max-width:900px){
+
+header{
+flex-direction:column;
+gap:15px;
+}
+
+nav{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero-container{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.trust-grid{
+grid-template-columns:1fr 1fr;
+}
+
+.partners-grid{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<img src="logo-mkc.png.png" alt="MKC Seguros">
+
+<div class="logo-text">
+MKC Seguros & Previdência
+</div>
+
+</div>
+
+<nav>
+
+<a href="#solucoes">Soluções</a>
+<a href="#sobre">Quem Somos</a>
+<a href="#faq">FAQ</a>
+<a href="#contato">Contato</a>
+
+<a
+href="https://wa.me/5521988293583"
+target="_blank"
+class="btn-whats">
+WhatsApp
+</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-container">
+
+<div>
+
+<h1>
+Proteja o que você conquistou com quem entende de seguros.
+</h1>
+
+<p>
+Soluções em seguros e previdência privada com atendimento consultivo especializado para pessoas, famílias e empresas em todo o Brasil.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#contato" class="btn-primary">
+Solicitar Cotação
+</a>
+
+<a
+href="https://wa.me/5521988293583"
+target="_blank"
+class="btn-secondary">
+Falar no WhatsApp
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img
+src="https://images.unsplash.com/photo-1609220136736-443140cffec6?auto=format&fit=crop&w=1200&q=80"
+alt="Família protegida">
+
+</div>
+
+</div>
+
+</section>
+
+<section class="trust-bar">
+
+<div class="trust-grid">
+
+<div class="trust-item">
+🛡️ Atendimento Personalizado
+</div>
+
+<div class="trust-item">
+🤝 Consultoria Especializada
+</div>
+
+<div class="trust-item">
+🏢 Grandes Seguradoras Parceiras
+</div>
+
+<div class="trust-item">
+🇧🇷 Atendimento em Todo o Brasil
+</div>
+
+</div>
+
+</section>
+
+<section class="section partners">
+
+<h2 class="section-title">
+Seguradoras Parceiras
+</h2>
+
+<p class="section-subtitle">
+Parcerias com seguradoras reconhecidas no mercado.
+</p>
+
+<div class="partners-grid">
+
+<div class="partner-card">
+<img src="Logo Mag.png" alt="MAG Seguros">
+</div>
+
+<div class="partner-card">
+<img src="LOgo porto seguro.png" alt="Porto Seguro">
+</div>
+
+<div class="partner-card">
+<img src="Logo Tokio marine.png" alt="Tokio Marine">
+</div>
+
+<div class="partner-card">
+<img src="Logo Bradesco seguros.png" alt="Bradesco Seguros">
+</div>
+
+</div>
+
+</section>
+
+<section id="solucoes" class="section">
+
+<h2 class="section-title">
+Nossas Soluções
+</h2>
+
+<p class="section-subtitle">
+Proteção personalizada para cada etapa da sua vida.
+</p>
+
+<div class="grid"><div class="card">
+
+<div class="card-icon">🚗</div>
+
+<h3>Seguro Auto</h3>
+
+<p>
+Proteção completa para seu veículo.
+</p>
+
+<p style="font-size:14px;color:#666;">
+Protege seu carro contra colisões, roubos, furtos e diversos imprevistos do trânsito.
+</p>
+
+<ul>
+<li>✓ Colisão</li>
+<li>✓ Roubo e Furto</li>
+<li>✓ Assistência 24h</li>
+<li>✓ Carro Reserva</li>
+<li>✓ Cobertura para Vidros</li>
+</ul>
+
+<a href="https://wa.me/5521988293583" target="_blank" class="card-btn">
+Solicitar Cotação
+</a>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">🏠</div>
+
+<h3>Seguro Residencial</h3>
+
+<p>
+Proteção para seu patrimônio e sua família.
+</p>
+
+<p style="font-size:14px;color:#666;">
+Protege imóvel, móveis, eletrodomésticos e oferece assistência residencial para emergências do dia a dia.
+</p>
+
+<ul>
+<li>✓ Incêndio</li>
+<li>✓ Roubo e Furto</li>
+<li>✓ Danos Elétricos</li>
+<li>✓ Vendaval</li>
+<li>✓ Assistência Residencial</li>
+</ul>
+
+<a href="https://wa.me/5521988293583" target="_blank" class="card-btn">
+Solicitar Cotação
+</a>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">❤️</div>
+
+<h3>Seguro de Vida</h3>
+
+<p>
+Segurança financeira para quem você ama.
+</p>
+
+<p style="font-size:14px;color:#666;">
+Garante proteção financeira para sua família em situações inesperadas.
+</p>
+
+<ul>
+<li>✓ Morte Natural</li>
+<li>✓ Morte Acidental</li>
+<li>✓ Invalidez Permanente</li>
+<li>✓ Doenças Graves</li>
+<li>✓ Assistência Funeral</li>
+</ul>
+
+<a href="https://wa.me/5521988293583" target="_blank" class="card-btn">
+Solicitar Cotação
+</a>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">🏥</div>
+
+<h3>Plano de Saúde</h3>
+
+<p>
+Cuidado e proteção para você e sua família.
+</p>
+
+<p style="font-size:14px;color:#666;">
+Acesso a consultas, exames, internações e atendimento médico especializado.
+</p>
+
+<ul>
+<li>✓ Consultas e Exames</li>
+<li>✓ Internações</li>
+<li>✓ Cobertura Nacional</li>
+<li>✓ Telemedicina</li>
+<li>✓ Rede Credenciada</li>
+</ul>
+
+<a href="https://wa.me/5521988293583" target="_blank" class="card-btn">
+Solicitar Cotação
+</a>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">🏢</div>
+
+<h3>Seguro Empresarial</h3>
+
+<p>
+Proteção para empresas e profissionais.
+</p>
+
+<p style="font-size:14px;color:#666;">
+Protege instalações, equipamentos, estoque e a continuidade das operações da empresa.
+</p>
+
+<ul>
+<li>✓ Patrimônio Empresarial</li>
+<li>✓ Equipamentos</li>
+<li>✓ Responsabilidade Civil</li>
+<li>✓ Incêndio e Roubo</li>
+<li>✓ Lucros Cessantes</li>
+</ul>
+
+<a href="https://wa.me/5521988293583" target="_blank" class="card-btn">
+Solicitar Cotação
+</a>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">📈</div>
+
+<h3>Previdência Privada</h3>
+
+<p>
+Planejamento financeiro para o futuro.
+</p>
+
+<p style="font-size:14px;color:#666;">
+Ajuda a construir patrimônio e complementar sua renda com tranquilidade.
+</p>
+
+<ul>
+<li>✓ PGBL</li>
+<li>✓ VGBL</li>
+<li>✓ Aposentadoria Complementar</li>
+<li>✓ Planejamento Sucessório</li>
+<li>✓ Benefícios Tributários</li>
+</ul>
+
+<a href="https://wa.me/5521988293583" target="_blank" class="card-btn">
+Solicitar Cotação
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="sobre" class="section">
+
+<h2 class="section-title">
+Por que escolher a MKC?
+</h2>
+
+<p class="section-subtitle">
+Atendimento próximo, transparente e focado nas necessidades de cada cliente.
+</p>
+
+<div class="grid">
+
+<div class="card">
+<div class="card-icon">🤝</div>
+<h3>Atendimento Consultivo</h3>
+<p>
+Analisamos seu perfil para indicar as soluções mais adequadas para sua realidade.
+</p>
+</div>
+
+<div class="card">
+<div class="card-icon">📊</div>
+<h3>Planejamento Financeiro</h3>
+<p>
+Proteção patrimonial e construção de segurança financeira para o futuro.
+</p>
+</div>
+
+<div class="card">
+<div class="card-icon">🛡️</div>
+<h3>Proteção Personalizada</h3>
+<p>
+Soluções desenvolvidas conforme seus objetivos pessoais, familiares ou empresariais.
+</p>
+</div>
+
+<div class="card">
+<div class="card-icon">🌎</div>
+<h3>Atendimento Nacional</h3>
+<p>
+Atendemos clientes em qualquer região do Brasil com suporte contínuo.
+</p>
+</div>
+
+</div>
+
+</section><section class="section testimonials" style="background:#F0F9FF;">
+
+<h2 class="section-title">
+O que nossos clientes dizem
+</h2>
+
+<p class="section-subtitle">
+A confiança dos nossos clientes é o nosso maior patrimônio.
+</p>
+
+<div class="grid">
+
+<div class="card">
+
+<div style="font-size:50px;color:#1389C9;">❝</div>
+
+<div style="color:#D4A62A;font-size:22px;margin-bottom:15px;">
+★★★★★
+</div>
+
+<p>
+Parabéns pelo atendimento, rapidez e confiança transmitidos durante todo o processo. Esses são os diferenciais que o mercado realmente valoriza.
+</p>
+
+<p style="margin-top:20px;font-weight:700;color:#1389C9;">
+Samuel Alcântara
+</p>
+
+</div>
+
+<div class="card">
+
+<div style="font-size:50px;color:#1389C9;">❝</div>
+
+<div style="color:#D4A62A;font-size:22px;margin-bottom:15px;">
+★★★★★
+</div>
+
+<p>
+Agradeço o suporte de vocês. O mundo dos seguros é muito complexo e, sem essa orientação especializada, eu não saberia contratar uma cobertura tão adequada às minhas necessidades.
+</p>
+
+<p style="margin-top:20px;font-weight:700;color:#1389C9;">
+Cristiane Muniz
+</p>
+
+</div>
+
+<div class="card">
+
+<div style="font-size:50px;color:#1389C9;">❝</div>
+
+<div style="color:#D4A62A;font-size:22px;margin-bottom:15px;">
+★★★★★
+</div>
+
+<p>
+Vocês estão de parabéns! É difícil encontrar uma corretora que atenda de forma simples, rápida e objetiva. Continuem assim, pois certamente estarão entre as melhores do país.
+</p>
+
+<p style="margin-top:20px;font-weight:700;color:#1389C9;">
+Wilhermo Toores
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Quem Somos
+</h2>
+
+<p class="section-subtitle">
+A MKC Seguros & Previdência oferece atendimento consultivo e soluções personalizadas para proteger o que realmente importa.
+</p>
+
+<div style="
+max-width:1000px;
+margin:auto;
+background:white;
+padding:50px;
+border-radius:24px;
+box-shadow:0 10px 30px rgba(0,0,0,.06);
+">
+
+<p style="margin-bottom:20px;">
+Acreditamos que cada cliente possui objetivos e necessidades únicas. Por isso, trabalhamos de forma próxima e transparente para identificar as melhores soluções em seguros e previdência privada.
+</p>
+
+<p style="margin-bottom:20px;">
+Nossa missão é ajudar pessoas, famílias e empresas a proteger seu patrimônio, preservar sua tranquilidade e planejar o futuro com segurança.
+</p>
+
+<p>
+Contamos com parcerias estratégicas com seguradoras reconhecidas no mercado para oferecer alternativas alinhadas ao perfil de cada cliente.
+</p>
+
+</div>
+
+</section>
+
+<section id="faq" class="section">
+
+<h2 class="section-title">
+Perguntas Frequentes
+</h2>
+
+<div style="max-width:1000px;margin:auto;">
+
+<div class="card" style="margin-bottom:20px;">
+<h3>Qual a diferença entre PGBL e VGBL?</h3>
+<p>
+O PGBL costuma ser indicado para quem faz declaração completa do Imposto de Renda. O VGBL normalmente é utilizado por quem faz declaração simplificada.
+</p>
+</div>
+
+<div class="card" style="margin-bottom:20px;">
+<h3>Vocês atendem apenas no Rio de Janeiro?</h3>
+<p>
+Não. A MKC atende clientes em todo o território nacional.
+</p>
+</div>
+
+<div class="card" style="margin-bottom:20px;">
+<h3>Posso solicitar uma cotação sem compromisso?</h3>
+<p>
+Sim. Todas as análises e simulações são realizadas sem compromisso.
+</p>
+</div>
+
+<div class="card">
+<h3>Com quais seguradoras vocês trabalham?</h3>
+<p>
+Trabalhamos com MAG Seguros, Porto Seguro, Tokio Marine e Bradesco Seguros.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contato" class="section">
+
+<h2 class="section-title">
+Solicite sua Cotação
+</h2>
+
+<p class="section-subtitle">
+Nossa equipe está pronta para ajudar você a encontrar a solução ideal.
+</p>
+
+<div style="
+max-width:900px;
+margin:auto;
+background:white;
+padding:50px;
+border-radius:24px;
+box-shadow:0 10px 30px rgba(0,0,0,.06);
+text-align:center;
+">
+
+<h3 style="
+color:#1389C9;
+margin-bottom:20px;
+font-size:30px;
+">
+Fale com um Especialista
+</h3>
+
+<p style="margin-bottom:30px;">
+Clique no botão abaixo para iniciar seu atendimento pelo WhatsApp.
+</p>
+
+<a
+href="https://wa.me/5521988293583"
+target="_blank"
+class="btn-primary">
+Solicitar Cotação
+</a>
+
+</div>
+
+</section>
+
+<footer style="
+background:#1389C9;
+color:white;
+padding:70px 8%;
+text-align:center;
+">
+
+<h3 style="
+font-size:30px;
+margin-bottom:20px;
+">
+MKC Seguros & Previdência
+</h3>
+
+<p style="margin-bottom:10px;">
+Confiança para proteger cada conquista.
+</p>
+
+<br>
+
+<p>📞 (21) 98829-3583</p>
+
+<p>✉️ contato@mkcseguros.com.br</p>
+
+<p>🌎 Atendimento em todo o Brasil</p>
+
+<br>
+
+<p>
+© 2025 MKC Seguros & Previdência. Todos os direitos reservados.
+</p>
+
+</footer>
+
+<a
+href="https://wa.me/5521988293583"
+target="_blank"
+style="
+position:fixed;
+bottom:25px;
+right:25px;
+width:72px;
+height:72px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:34px;
+text-decoration:none;
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+z-index:999;
+">
+💬
+</a>
+
+</body>
+</html>
