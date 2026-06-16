@@ -161,7 +161,21 @@ max-width:1200px;
 margin:auto;
 }
 
-.partner-card{
+.partner-card{.partner-card img{
+width:100%;
+max-width:180px;
+height:90px;
+object-fit:contain;
+display:block;
+margin:auto;
+filter:grayscale(10%);
+transition:.3s ease;
+}
+
+.partner-card:hover img{
+transform:scale(1.08);
+filter:none;
+}
 background:white;
 padding:35px 25px;
 border-radius:18px;
