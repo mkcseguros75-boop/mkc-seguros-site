@@ -8,7 +8,7 @@
 
 <title>MKC Seguros & Previdência</title>
 
-<meta name="description" content="Soluções em seguros, previdência privada e proteção patrimonial para pessoas, famílias e empresas em todo o Brasil.">
+<meta name="description" content="Seguros, Previdência Privada e Planejamento Financeiro para pessoas, famílias e empresas.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
@@ -19,115 +19,110 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:'Poppins',sans-serif;
+}
+
+html{
 scroll-behavior:smooth;
 }
 
 body{
-background:#f8f9fb;
-color:#222;
+background:#F8FAFC;
+color:#1F2937;
 line-height:1.7;
 overflow-x:hidden;
 }
 
 header{
-background:#fff;
-padding:12px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-box-shadow:0 3px 18px rgba(0,0,0,.08);
 position:sticky;
 top:0;
 z-index:999;
+background:white;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 20px rgba(0,0,0,.08);
 }
 
 .logo{
 display:flex;
 align-items:center;
-gap:18px;
+gap:15px;
 }
 
 .logo img{
-height:190px;
+height:90px;
 width:auto;
-transition:.3s;
 }
 
-.logo img:hover{
-transform:scale(1.04);
-}
-
-.logo h2{
-color:#0A2342;
-font-size:34px;
+.logo-text{
+font-size:28px;
 font-weight:700;
+color:#0A2342;
 }
 
 nav{
 display:flex;
-align-items:center;
+gap:30px;
 }
 
 nav a{
 text-decoration:none;
 color:#0A2342;
-margin-left:30px;
 font-weight:500;
 transition:.3s;
 }
 
 nav a:hover{
-color:#E3B23C;
+color:#D4A62A;
 }
 
 .hero{
-background:
-linear-gradient(
-rgba(10,35,66,.80),
-rgba(10,35,66,.80)
-),
-url("https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1800&q=80");
-
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
+background:linear-gradient(
+135deg,
+#081A31 0%,
+#0A2342 50%,
+#123A68 100%
+);
 
 color:white;
+padding:140px 8%;
 text-align:center;
-padding:180px 8%;
 }
 
 .hero h1{
 font-size:64px;
 font-weight:800;
-margin-bottom:25px;
-max-width:1100px;
-margin-left:auto;
-margin-right:auto;
 line-height:1.2;
+max-width:1000px;
+margin:auto;
+margin-bottom:25px;
 }
 
 .hero p{
 font-size:20px;
-max-width:900px;
+max-width:800px;
 margin:auto;
-margin-bottom:35px;
+margin-bottom:40px;
+opacity:.95;
 }
 
 .btn{
 display:inline-block;
 padding:16px 36px;
-border-radius:10px;
+border-radius:12px;
 text-decoration:none;
 font-weight:600;
-background:#E3B23C;
-color:white;
 transition:.3s;
 }
 
-.btn:hover{
+.btn-primary{
+background:#D4A62A;
+color:white;
+}
+
+.btn-primary:hover{
 transform:translateY(-3px);
-box-shadow:0 12px 25px rgba(0,0,0,.15);
 }
 
 .section{
@@ -135,132 +130,75 @@ padding:90px 8%;
 }
 
 .section-title{
-text-align:center;
-font-size:52px;
+font-size:48px;
 font-weight:800;
 color:#0A2342;
-margin-bottom:20px;
+text-align:center;
+margin-bottom:15px;
 }
 
 .section-subtitle{
 text-align:center;
-color:#666;
+color:#6B7280;
 margin-bottom:60px;
-font-size:18px;
-}
-
-.partners{
-background:white;
 }
 
 .partners-grid{
 display:grid;
 grid-template-columns:repeat(4,1fr);
-gap:30px;
+gap:25px;
 max-width:1000px;
 margin:auto;
 }
 
-.partner-card{.partner-card img{
-width:100%;
-max-width:180px;
-height:90px;
-object-fit:contain;
-display:block;
-margin:auto;
-filter:grayscale(10%);
-transition:.3s ease;
-}
-
-.partner-card:hover img{
-transform:scale(1.08);
-filter:none;
-}
+.partner-card{
 background:white;
-padding:35px 25px;
+padding:20px;
 border-radius:18px;
-text-align:center;
-box-shadow:0 8px 25px rgba(0,0,0,.06);
-transition:all .35s ease;
-border:1px solid #eef2f7;
-}
-
-.partner-card:hover{
-transform:translateY(-10px);
-box-shadow:0 20px 40px rgba(0,0,0,.12);
-}
-
-.partner-card h3{
-font-size:26px;
-font-weight:800;
-color:#0A2342;
-margin-bottom:8px;
-}
-
-.partner-card p{
-color:#6b7280;
-font-size:14px;
-}background:#fff;
-padding:25px;
-border-radius:14px;
-text-align:center;
-font-weight:600;
-color:#0A2342;
-box-shadow:0 5px 15px rgba(0,0,0,.05);
+display:flex;
+align-items:center;
+justify-content:center;
+min-height:120px;
+box-shadow:0 8px 25px rgba(0,0,0,.05);
 transition:.3s;
 }
 
 .partner-card:hover{
 transform:translateY(-8px);
-box-shadow:0 20px 35px rgba(0,0,0,.10);
+box-shadow:0 20px 35px rgba(0,0,0,.12);
 }
 
-.stats{
-background:#0A2342;
-color:white;
-padding:60px 8%;
-}
-
-.stats-grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:30px;
-text-align:center;
-}
-
-.stat-number{
-font-size:56px;
-font-weight:800;
-color:#E3B23C;
-}
-
-.stat-label{
-font-size:18px;
+.partner-card img{
+max-width:120px;
+max-height:55px;
+width:auto;
+height:auto;
+object-fit:contain;
 }.grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 gap:30px;
-max-width:1400px;
+max-width:1300px;
 margin:auto;
 }
 
 .card{
 background:white;
 padding:35px;
-border-radius:18px;
+border-radius:20px;
 box-shadow:0 8px 25px rgba(0,0,0,.06);
-transition:all .35s ease;
+transition:.35s;
 }
 
 .card:hover{
-transform:translateY(-12px);
+transform:translateY(-10px);
 box-shadow:0 25px 45px rgba(0,0,0,.12);
 }
 
 .card-icon{
 width:70px;
 height:70px;
-border-radius:16px;
+border-radius:18px;
 background:#EEF4F8;
 display:flex;
 align-items:center;
@@ -270,27 +208,65 @@ margin-bottom:20px;
 }
 
 .card h3{
-font-size:20px;
 color:#0A2342;
 margin-bottom:15px;
+font-size:22px;
 }
 
 .card p{
 color:#555;
 }
 
-.card ul{
-margin-top:15px;
-padding-left:18px;
+.stats{
+background:#0A2342;
+color:white;
 }
 
-.card li{
-margin-bottom:8px;
-color:#555;
+.stats-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+max-width:1200px;
+margin:auto;
+text-align:center;
+}
+
+.stat-number{
+font-size:56px;
+font-weight:800;
+color:#D4A62A;
+}
+
+.stat-label{
+font-size:18px;
+}
+
+.features{
+background:white;
+}
+
+.features-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+max-width:1200px;
+margin:auto;
+}
+
+.feature{
+background:#F4F7FA;
+padding:30px;
+border-radius:18px;
+text-align:center;
+}
+
+.feature h3{
+color:#0A2342;
+margin-bottom:10px;
 }
 
 .about{
-background:white;
+background:#F8FAFC;
 }
 
 .about-grid{
@@ -302,141 +278,19 @@ margin:auto;
 }
 
 .about-box{
-background:#F4F7FA;
-padding:40px;
-border-radius:18px;
-}
-
-.about-box h3{
-font-size:22px;
-color:#0A2342;
-margin-bottom:20px;
-}
-
-.faq{
-background:#f8f9fb;
-}
-
-.faq-item{
-background:white;
-padding:25px;
-border-radius:16px;
-margin-bottom:20px;
-box-shadow:0 5px 15px rgba(0,0,0,.05);
-}
-
-.faq-item h3{
-color:#0A2342;
-margin-bottom:10px;
-}
-
-.contact{
-background:white;
-}
-
-.contact-form{
-max-width:900px;
-margin:auto;
 background:white;
 padding:40px;
 border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
+box-shadow:0 8px 25px rgba(0,0,0,.05);
 }
 
-.form-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:15px;
-}
-
-.contact-form input,
-.contact-form select,
-.contact-form textarea{
-width:100%;
-padding:16px;
-border:1px solid #ddd;
-border-radius:10px;
-font-size:15px;
-}
-
-.contact-form textarea{
-height:140px;
-resize:none;
-margin-top:15px;
-}
-
-.contact-form button{
-margin-top:15px;
-border:none;
-cursor:pointer;
-}
-
-footer{
-background:#081A31;
-color:white;
-text-align:center;
-padding:60px 20px;
-}
-
-footer h3{
+.about-box h3{
+color:#0A2342;
 margin-bottom:20px;
-}
-
-.whatsapp{
-position:fixed;
-bottom:25px;
-right:25px;
-width:70px;
-height:70px;
-border-radius:50%;
-background:#25D366;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:34px;
-text-decoration:none;
-box-shadow:0 8px 25px rgba(0,0,0,.25);
-z-index:999;
-transition:.3s;
-}
-
-.whatsapp:hover{
-transform:scale(1.1);
-}
-
-@media(max-width:900px){
-
-.logo h2{
 font-size:24px;
 }
 
-.logo img{
-height:80px;
-}
-
-.hero{
-padding:120px 6%;
-}
-
-.hero h1{
-font-size:42px;
-}
-
-.section-title{
-font-size:36px;
-}
-
-.stats-grid{
-grid-template-columns:1fr 1fr;
-}
-
-.about-grid{
-grid-template-columns:1fr;
-}
-
-.form-grid{
-grid-template-columns:1fr;
-}
+@media(max-width:900px){
 
 header{
 flex-direction:column;
@@ -448,13 +302,30 @@ flex-wrap:wrap;
 justify-content:center;
 }
 
-nav a{
-margin:8px;
+.hero h1{
+font-size:42px;
+}
+
+.partners-grid{
+grid-template-columns:1fr 1fr;
+}
+
+.stats-grid{
+grid-template-columns:1fr 1fr;
+}
+
+.features-grid{
+grid-template-columns:1fr;
+}
+
+.about-grid{
+grid-template-columns:1fr;
 }
 
 }
 
 </style>
+
 </head>
 
 <body>
@@ -463,7 +334,9 @@ margin:8px;
 
 <div class="logo">
 <img src="logo-mkc.png.png" alt="MKC Seguros">
-<h2>MKC Seguros & Previdência</h2>
+<div class="logo-text">
+MKC Seguros & Previdência
+</div>
 </div>
 
 <nav>
@@ -477,21 +350,28 @@ margin:8px;
 
 <section class="hero">
 
-<h1>Confiança para proteger cada conquista.</h1>
+<h1>
+Confiança para proteger cada conquista.
+</h1>
 
 <p>
 Proteção patrimonial, segurança familiar e planejamento financeiro com atendimento consultivo especializado em todo o Brasil.
 </p>
 
-<a href="#contato" class="btn">
+<a
+href="https://wa.me/5521988293583"
+target="_blank"
+class="btn btn-primary">
 Solicitar Cotação
 </a>
 
 </section>
 
-<section class="section partners">
+<section class="section">
 
-<h2 class="section-title">Seguradoras Parceiras</h2>
+<h2 class="section-title">
+Seguradoras Parceiras
+</h2>
 
 <p class="section-subtitle">
 Trabalhamos com algumas das maiores seguradoras do mercado.
@@ -517,11 +397,13 @@ Trabalhamos com algumas das maiores seguradoras do mercado.
 
 </div>
 
-</div>
+</section>
 
-</section><section id="solucoes" class="section">
+<section id="solucoes" class="section">
 
-<h2 class="section-title">Nossas Soluções</h2>
+<h2 class="section-title">
+Nossas Soluções
+</h2>
 
 <p class="section-subtitle">
 Proteção personalizada para cada fase da sua vida.
@@ -533,73 +415,43 @@ Proteção personalizada para cada fase da sua vida.
 <div class="card-icon">🚗</div>
 <h3>Seguro Auto</h3>
 <p>Proteção completa para seu veículo.</p>
-<ul>
-<li>Assistência 24 horas</li>
-<li>Carro reserva</li>
-<li>Cobertura para vidros</li>
-</ul>
 </div>
 
 <div class="card">
 <div class="card-icon">🏠</div>
 <h3>Seguro Residencial</h3>
 <p>Proteja seu patrimônio e sua família.</p>
-<ul>
-<li>Incêndio</li>
-<li>Roubo e furto</li>
-<li>Danos elétricos</li>
-</ul>
 </div>
 
 <div class="card">
 <div class="card-icon">❤️</div>
 <h3>Seguro de Vida</h3>
 <p>Segurança financeira para quem você ama.</p>
-<ul>
-<li>Morte natural</li>
-<li>Invalidez</li>
-<li>Doenças graves</li>
-</ul>
 </div>
 
 <div class="card">
 <div class="card-icon">🏥</div>
 <h3>Plano de Saúde</h3>
 <p>Soluções para pessoas e empresas.</p>
-<ul>
-<li>Rede credenciada</li>
-<li>Cobertura nacional</li>
-<li>Telemedicina</li>
-</ul>
 </div>
 
 <div class="card">
 <div class="card-icon">🏢</div>
 <h3>Seguro Empresarial</h3>
 <p>Proteção para empresas e profissionais.</p>
-<ul>
-<li>Responsabilidade civil</li>
-<li>Equipamentos</li>
-<li>Patrimônio</li>
-</ul>
 </div>
 
 <div class="card">
 <div class="card-icon">📈</div>
 <h3>Previdência Privada</h3>
-<p>Planejamento financeiro de longo prazo.</p>
-<ul>
-<li>PGBL</li>
-<li>VGBL</li>
-<li>Planejamento sucessório</li>
-</ul>
+<p>PGBL, VGBL e planejamento sucessório.</p>
 </div>
 
 </div>
 
 </section>
 
-<section class="stats">
+<section class="section stats">
 
 <div class="stats-grid">
 
@@ -620,16 +472,20 @@ Proteção personalizada para cada fase da sua vida.
 
 <div>
 <div class="stat-number">100%</div>
-<div class="stat-label">Atendimento Consultivo</div>
+<div class="stat-label">Consultoria Personalizada</div>
 </div>
 
 </div>
 
-</section>
+</section><section id="sobre" class="section about">
 
-<section id="sobre" class="section about">
+<h2 class="section-title">
+Quem Somos
+</h2>
 
-<h2 class="section-title">Quem Somos</h2>
+<p class="section-subtitle">
+Protegendo conquistas e planejando futuros.
+</p>
 
 <div class="about-grid">
 
@@ -645,6 +501,10 @@ A MKC nasceu com o propósito de oferecer soluções personalizadas em seguros e
 Acreditamos que proteção vai além da contratação de uma apólice. Atuamos de forma consultiva, ajudando pessoas, famílias e empresas a proteger seu patrimônio e construir um futuro mais seguro.
 </p>
 
+<p>
+Nosso compromisso é oferecer atendimento próximo, transparente e especializado, construindo relacionamentos duradouros baseados em confiança.
+</p>
+
 </div>
 
 <div class="about-box">
@@ -652,12 +512,12 @@ Acreditamos que proteção vai além da contratação de uma apólice. Atuamos d
 <h3>Por que escolher a MKC?</h3>
 
 <ul>
-<li>✓ Atendimento personalizado</li>
-<li>✓ Consultoria especializada</li>
+<li>✓ Atendimento consultivo e personalizado</li>
 <li>✓ Atendimento em todo o Brasil</li>
 <li>✓ Especialistas em Previdência Privada</li>
-<li>✓ Suporte contínuo</li>
-<li>✓ Transparência e confiança</li>
+<li>✓ Análise das melhores opções do mercado</li>
+<li>✓ Suporte antes e após a contratação</li>
+<li>✓ Relacionamento baseado em confiança</li>
 </ul>
 
 </div>
@@ -666,70 +526,56 @@ Acreditamos que proteção vai além da contratação de uma apólice. Atuamos d
 
 </section>
 
-<section id="faq" class="section faq">
+<section id="faq" class="section">
 
-<h2 class="section-title">Perguntas Frequentes</h2>
+<h2 class="section-title">
+Perguntas Frequentes
+</h2>
 
 <div style="max-width:1000px;margin:auto;">
 
-<div class="faq-item">
+<div class="about-box" style="margin-bottom:20px;">
 <h3>Qual a diferença entre PGBL e VGBL?</h3>
-<p>O PGBL é indicado para quem realiza declaração completa do IR. O VGBL costuma ser mais adequado para quem utiliza a declaração simplificada.</p>
+<p>
+O PGBL é indicado para quem realiza a declaração completa do Imposto de Renda. O VGBL costuma ser mais adequado para quem utiliza a declaração simplificada.
+</p>
 </div>
 
-<div class="faq-item">
+<div class="about-box" style="margin-bottom:20px;">
 <h3>Atendem apenas no Rio de Janeiro?</h3>
-<p>Não. A MKC atende clientes em todo o território nacional.</p>
+<p>
+Não. A MKC atende clientes em todo o território nacional.
+</p>
 </div>
 
-<div class="faq-item">
-<h3>Posso solicitar cotação sem compromisso?</h3>
-<p>Sim. Todas as análises e simulações são realizadas sem compromisso.</p>
+<div class="about-box" style="margin-bottom:20px;">
+<h3>Posso solicitar uma cotação sem compromisso?</h3>
+<p>
+Sim. Todas as análises e simulações são realizadas sem compromisso.
+</p>
 </div>
 
 </div>
 
 </section>
 
-<section id="contato" class="section contact">
+<section id="contato" class="section">
 
-<h2 class="section-title">Solicite sua Cotação</h2>
+<h2 class="section-title">
+Solicite sua Cotação
+</h2>
 
 <p class="section-subtitle">
-Nossa equipe entrará em contato para apresentar as melhores soluções para você.
+Nossa equipe está pronta para ajudar você a encontrar a melhor solução.
 </p>
 
-<div class="contact-form">
-
-<div class="form-grid">
-
-<input type="text" placeholder="Nome Completo">
-
-<input type="tel" placeholder="Telefone">
-
-<input type="email" placeholder="E-mail">
-
-<select>
-<option>Tipo de Seguro</option>
-<option>Seguro Auto</option>
-<option>Seguro Residencial</option>
-<option>Seguro de Vida</option>
-<option>Plano de Saúde</option>
-<option>Seguro Empresarial</option>
-<option>Previdência Privada</option>
-</select>
-
-</div>
-
-<textarea placeholder="Conte um pouco sobre sua necessidade"></textarea>
-
-<br><br>
+<div style="text-align:center;">
 
 <a
 href="https://wa.me/5521988293583"
 target="_blank"
-class="btn">
-Solicitar Cotação
+class="btn btn-primary">
+Falar com um Especialista
 </a>
 
 </div>
@@ -740,12 +586,18 @@ Solicitar Cotação
 
 <h3>MKC Seguros & Previdência</h3>
 
-<p>Confiança para proteger cada conquista.</p>
+<br>
+
+<p>
+Confiança para proteger cada conquista.
+</p>
 
 <br>
 
 <p>📞 (21) 98829-3583</p>
+
 <p>✉️ contato@mkcseguros.com.br</p>
+
 <p>🌎 Atendimento em todo o Brasil</p>
 
 <br>
@@ -759,7 +611,22 @@ Solicitar Cotação
 <a
 href="https://wa.me/5521988293583"
 target="_blank"
-class="whatsapp">
+style="
+position:fixed;
+right:25px;
+bottom:25px;
+width:70px;
+height:70px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:34px;
+text-decoration:none;
+box-shadow:0 8px 25px rgba(0,0,0,.25);
+z-index:999;
+">
 💬
 </a>
 
